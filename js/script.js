@@ -5,26 +5,14 @@ var Counter = React.createClass({
         };
     },
 
-    componentWillMount: function() {
-        console.log('componentWillMount -> zaraz zacznie się renderować')
-    },
-
     componentDidMount : function() {
         console.log('componentDidMount')
         console.log('komponent jest montowany w drzewie DOM')
     },
 
-    componentWillReceiveProps: function() {
-        console.log('componentWillReceiveProps -> coś się zmieniło')
-    },
-
     shouldComponentUpdate: function() {
-        console.log('shouldComponentUpdate ->ale serio jest inaczej?  true/false')
+        console.log('Czy coś sie zmieniło?  true/false')
         return true
-    },
-
-    componentWillUpdate: function() {
-        console.log('componentWillUpdate -> if shouldComponentUpdate= true -> przygotowanie do zmian')
     },
 
     componentDidUpdate: function() {
